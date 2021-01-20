@@ -1,0 +1,26 @@
+Link for instructions: https://tdlib.github.io/td/build.html?language=C%23
+-------------------------------------------------------------------------------------
+git clone https://github.com/tdlib/td.git
+cd td
+git checkout v1.7.0
+git clone https://github.com/Microsoft/vcpkg.git
+cd vcpkg
+./bootstrap-vcpkg.bat
+./vcpkg.exe install openssl:x64-windows openssl:x86-windows zlib:x64-windows zlib:x86-windows
+cd ..
+Remove-Item build -Force -Recurse -ErrorAction SilentlyContinue
+mkdir build
+cd build
+cmake -A Win32 -DCMAKE_INSTALL_PREFIX:PATH=../tdlib -DTD_ENABLE_DOTNET=ON -DCMAKE_TOOLCHAIN_FILE:FILEPATH=../vcpkg/scripts/buildsystems/vcpkg.cmake ..
+cmake --build . --config Release
+cmake --build . --config Debug
+cd..
+mkdir build64
+cd build64
+cmake -A x64 -DCMAKE_INSTALL_PREFIX:PATH=../tdlib -DTD_ENABLE_DOTNET=ON -DCMAKE_TOOLCHAIN_FILE:FILEPATH=../vcpkg/scripts/buildsystems/vcpkg.cmake ..
+cmake --build . --config Release
+cmake --build . --config Debug
+cd ..
+cd ..
+dir td/tdlib
+-------------------------------------------------------------------------------------

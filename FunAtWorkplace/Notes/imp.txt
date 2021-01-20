@@ -1,0 +1,64 @@
+t.me/f_dev_bot
+Dev Token: 1490206888:AAGJjhQCY2mcods00MHujC050CsC79v_0uU
+https://core.telegram.org/bots/api
+
+https://api.telegram.org/bot1490206888:AAGJjhQCY2mcods00MHujC050CsC79v_0uU/getMe
+https://api.telegram.org/bot1490206888:AAGJjhQCY2mcods00MHujC050CsC79v_0uU/getUpdates
+
+g470517816
+
+https://api.telegram.org/bot1490206888:AAGJjhQCY2mcods00MHujC050CsC79v_0uU/sendMessage?chat_id=-470517816&text=duniya%20me%20pyar%20jab%20tarse
+
+https://api.telegram.org/bot1490206888:AAGJjhQCY2mcods00MHujC050CsC79v_0uU/sendPhoto?chat_id=-470517816&photo=http://commentpics.in/wp-content/uploads/2015/04/23.jpg&caption=test
+
+https://www.funatworkplace-dev.com
+Title:				devfunatworkplace
+api_id:				2179654
+api_hash:			c5252b873118c679a8aff474080987c4
+Test Configuration:	149.154.167.40:443
+Prod Configuration:	149.154.167.50:443
+
+
+---------------------------
+groups
+
+    -1001459765999
+    -470517816
+    777000
+    93372553
+    389577820
+
+-----------------
+users 
+    389577820
+    599036603
+    694602870
+    694828426
+    743490034
+    752921861
+    761569212
+    816097289
+    871480147
+    898941409
+    918912932
+    1005388930
+    1019205601
+    1069078801
+    1074388496
+    1098701951
+    1124128597
+    1176980596
+    1227882621
+    1245025369
+    1269729671
+    1276606345
+    1315609439
+    1324415567
+    1398803915
+    1425480488
+    1436533685
+    1476354759
+    1488565696
+    1491555037
+
+1124128597|1425480488|871480147

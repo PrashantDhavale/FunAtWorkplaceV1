@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;1591</NoWarn>
+    <DocumentationFile>C:\Workspace\Working\source\FunAtWorkplace\FunAtWorkplace.Service\FunAtWorkplace.Service.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <NoWarn>1701;1702;1591</NoWarn>
+    <DocumentationFile>C:\Workspace\Working\source\FunAtWorkplace\FunAtWorkplace.Service\FunAtWorkplace.Service.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <NoWarn>1701;1702;1591</NoWarn>
+    <DocumentationFile>C:\Workspace\Working\source\FunAtWorkplace\FunAtWorkplace.Service\FunAtWorkplace.Service.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Telegram.Td">
+      <HintPath>..\RefAssemblies\x64\Debug\Telegram.Td.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="C:\Workspace\Working\poc_projects\fun-at-workplace\td-assemblies\x64\Debug\zlibd1.dll">
+      <Link>zlibd1.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="C:\Workspace\Working\poc_projects\fun-at-workplace\td-assemblies\x64\Debug\libcrypto-1_1-x64.dll">
+      <Link>libcrypto-1_1.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Workspace\Working\poc_projects\fun-at-workplace\td-assemblies\x64\Debug\libssl-1_1-x64.dll">
+      <Link>libssl-1_1.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>
