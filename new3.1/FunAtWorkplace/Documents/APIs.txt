@@ -1,0 +1,11 @@
+createNewBasicGroupChat
+	createBasicGroupChat 
+createNewSupergroupChat
+	createSupergroupChat 
+	addChatMembers 
+
+sendMessage 
+getUser 
+
+
+
