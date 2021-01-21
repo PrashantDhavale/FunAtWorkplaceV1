@@ -8,21 +8,21 @@
   <ItemGroup>
     <Reference Include="Telegram.Td, Version=0.0.0.0, Culture=neutral, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Workspace\Working\poc_projects\fun-at-workplace\td-assemblies\x64\Debug\Telegram.Td.dll</HintPath>
+      <HintPath>C:\Users\Yashika\Documents\GitHub\FunAtWorkplaceV1\fun-at-workplace\td-assemblies\x64\Debug\Telegram.Td.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="C:\Workspace\Working\poc_projects\fun-at-workplace\td-assemblies\x64\Debug\zlibd1.dll">
+    <Content Include="C:\Users\Yashika\Documents\GitHub\FunAtWorkplaceV1\fun-at-workplace\td-assemblies\x64\Debug\zlibd1.dll">
       <Link>zlibd1.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="C:\Workspace\Working\poc_projects\fun-at-workplace\td-assemblies\x64\Debug\libcrypto-1_1-x64.dll">
+    <Content Include="C:\Users\Yashika\Documents\GitHub\FunAtWorkplaceV1\fun-at-workplace\td-assemblies\x64\Debug\libcrypto-1_1-x64.dll">
       <Link>libcrypto-1_1.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="C:\Workspace\Working\poc_projects\fun-at-workplace\td-assemblies\x64\Debug\libssl-1_1-x64.dll">
+    <Content Include="C:\Users\Yashika\Documents\GitHub\FunAtWorkplaceV1\fun-at-workplace\td-assemblies\x64\Debug\libssl-1_1-x64.dll">
       <Link>libssl-1_1.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
