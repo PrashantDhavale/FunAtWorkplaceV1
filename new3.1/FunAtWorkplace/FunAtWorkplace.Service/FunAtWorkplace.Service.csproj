@@ -5,22 +5,24 @@
     <RootNamespace>FunAtWorkplace.Service</RootNamespace>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <DocumentationFile></DocumentationFile>
-  </PropertyGroup>
-
   <ItemGroup>
-    <Content Include="C:\Working\Projects\FunAtWorkplace\FunAtWorkplace.Service\TdAssemblies\x64\Debug\zlibd1.dll">
+    <Reference Include="Telegram.Td, Version=0.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\TdAssemblies\x64\Release\Telegram.Td.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TdAssemblies\x64\Release\zlib1.dll">
       <Link>zlibd1.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="C:\Working\Projects\FunAtWorkplace\FunAtWorkplace.Service\TdAssemblies\x64\Debug\libcrypto-1_1-x64.dll">
+    <Content Include="TdAssemblies\x64\Release\libcrypto-1_1-x64.dll">
       <Link>libcrypto-1_1.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="C:\Working\Projects\FunAtWorkplace\FunAtWorkplace.Service\TdAssemblies\x64\Debug\libssl-1_1-x64.dll">
+    <Content Include="TdAssemblies\x64\Release\libssl-1_1-x64.dll">
       <Link>libssl-1_1.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -31,14 +33,6 @@
   <ItemGroup>
     <Folder Include="Infrastructure\Implementations\" />
     <Folder Include="Models\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="Telegram.Td, Version=0.0.0.0, Culture=neutral, processorArchitecture=AMD64">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath Condition=" '$(Platform)' == 'x86' ">TdAssemblies\x86\Debug\Telegram.Td.dll</HintPath>
-      <HintPath Condition=" '$(Platform)' == 'x64' ">TdAssemblies\x64\Debug\Telegram.Td.dll</HintPath>
-    </Reference>
   </ItemGroup>
 
 </Project>

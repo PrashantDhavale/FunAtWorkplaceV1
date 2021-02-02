@@ -27,17 +27,24 @@ namespace FunAtWorkplace.Service.Services
 
         #region Methods
 
-        public bool InitializeTdClient()
+        public void SendMessage(string message)
         {
-            _tdClient.InitializeTdClient();
-            Task.Delay(5000);
-            return true;
+            _tdClient.SendMessage(message);
         }
 
-        public void SetAuthCodeTdClient(string code)
+        public void SetAuthCode(string code)
         {
-            _tdClient.SetAuthCodeTdClient(code);
-            Task.Delay(5000);
+            _tdClient.SetAuthCode(code);
+        }
+
+        public void Logout()
+        {
+            _tdClient.Logout();
+        }
+
+        public void GetChats()
+        {
+            _tdClient.GetChats();
         }
 
         #endregion

@@ -2,7 +2,17 @@
 {
     public interface ITdClientService
     {
-        bool InitializeTdClient();
-        void SetAuthCodeTdClient(string code);
+        void SetAuthCode(string code);
+        void GetChats();
+        void Logout();
+        void SendMessage(string message);
+    }
+
+    public interface ITdClient
+    {
+        void SetAuthCode(string code);
+        void GetChats();
+        void Logout();
+        void SendMessage(string message);
     }
 }

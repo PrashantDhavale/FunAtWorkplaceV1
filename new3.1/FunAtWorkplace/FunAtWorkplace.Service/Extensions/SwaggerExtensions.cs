@@ -30,9 +30,6 @@ namespace FunAtWorkplace.Service.Extensions
                         Url = new Uri(configuration["Swagger:ApiLicense:Url"]),
                     }
                 });
-                //var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-                //var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-                //options.IncludeXmlComments(xmlPath);
             });
             return services;
         }
